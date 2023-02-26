@@ -1,11 +1,6 @@
-window.addEventListener("DOMContentLoaded", function() {
-	var video = document.querySelector("#cameraVideo");
-
-	if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-		navigator.mediaDevices.getUserMedia({video:true}).then(function(stream) {
-			video.srcObject = stream;
-		});
-	} else {
-		console.log("Hmmm");
+function loadImage(input) {
+	if (input.files && input.files[0]) {
+		var waterImage = document.getElementById('waterImage');
+		waterImage.src = URL.createObjectURL(input.files[0]);
 	}
-}, false);
+}

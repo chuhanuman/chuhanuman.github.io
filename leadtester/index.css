@@ -1,7 +1,4 @@
-#cameraVideo {
-	border-radius: 50%;
+#waterImage {
 	object-fit: cover;
 	width: 100%;
-	height: 50%;
-	border: 10px #333 solid;
 }
