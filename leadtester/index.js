@@ -365,7 +365,14 @@ function loadImage(input) {
 			
 			var output = document.getElementById("testResult");
 			output.innerHTML = testImage(ctx.getImageData(0, 0, canvas.width, canvas.height).data);
+			
+			var form = document.getElementById("submissionForm");
+			form.style.display = "block";
 		};
 		tempImage.src = URL.createObjectURL(input.files[0]);
 	}
+}
+
+function submitForm() {
+	return false;
 }

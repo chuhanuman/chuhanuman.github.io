@@ -1,3 +1,6 @@
 #waterImage {
 	object-fit: cover;
 }
+#submissionForm {
+	display: none;
+}
